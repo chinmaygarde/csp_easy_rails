@@ -1,0 +1,5 @@
+Description:
+    Generates the default CSP policy file
+
+Example:
+    rails generate csp_easy

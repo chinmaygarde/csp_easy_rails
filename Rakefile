@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "csp_easy_rails"
   gem.homepage = "http://github.com/chinmaygarde/csp_easy_rails"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Rails extensions for CSP Easy}
+  gem.description = %Q{Rails extensions for CSP Easy}
   gem.email = "chinmaygarde@gmail.com"
   gem.authors = ["Chinmay Garde"]
   # dependencies defined in Gemfile

@@ -1,0 +1,45 @@
+### Content Security Policy Specification
+### -------------------------------------
+### See https://wiki.mozilla.org/Security/CSP/Specification for more details
+### Also see https://dvcs.w3.org/hg/content-security-policy/raw-file/tip/csp-specification.dev.html
+### Uncomment and edit attributes of this YML to change CSP sitewide
+
+### The catch-all section that defines the security policy for all types of content which are not called out in any of the other directives.
+allow: 'self'
+
+### Options for modifying the underlying behavior of CSP
+# options: [inline-script, eval-script]
+
+### Indicates which sources are valid for images and favicons.
+# img-src: [cdn.myweb.com]
+
+# Indicates which sources are valid for audio and video elements.
+# media-src: [media.myweb.com]
+
+### Indicates which sources are valid for scripts.
+# script-src: [script.myweb.com]
+
+### Indicates which sources are valid for object, embed, and applet elements.
+# object-src: [obs.myweb.com]
+
+### Indicates which sources are valid for frame and iframe elements.
+# frame-src: [frames.myweb.com]
+
+### Indicates which sources are valid for @font-src CSS loads.
+# font-src: [fonts.myweb.com]
+
+### Indicates which sources are valid for XMLHttpRequest connections.
+# xhr-src: [xhr.myweb.com]
+
+### Indicates which sources are valid ancestors for embedding the protected resource via object, frame and iframe tags. An ancestor is any HTML document between the protected resource and the top of the window frame tree; for example, if A embeds B which embeds C, both A and B are ancestors of C. If A embeds both B and C, B is not an ancestor of C, but A still is.
+# frame-ancestors: [ancestors.myweb.com]
+
+### Indicates which sources are valid for externally linked stylesheets.
+### User Agents MUST always allow inline stylesheets and style attributes of HTML tags.
+# style-src: [styles.myweb.com]
+
+### Instructs the browser where to send a report when CSP is violated.
+# report-uri: myreport.myweb.com
+
+### Indicates the location of a file containing the security policies for the protected resource.
+# policy-uri: policy.myweb.com
